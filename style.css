@@ -117,7 +117,7 @@ text-decoration: none;
 ul{
 list-style: none;
 }
-.thumbnail img{
+.thumbnail {
 	border: none;
 }
 .thumbnail:hover{
