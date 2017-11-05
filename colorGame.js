@@ -1,3 +1,4 @@
+//global values
 var mode = 6;
 var colors = generateRandomColors(mode);
 var goal = randomPick();
@@ -87,7 +88,7 @@ for (var i=0; i<squares.length; i++){
 	squares[i].addEventListener("click", function(){
 		//grab color clicked
 		var clickedColor = this.style.backgroundColor;
-		
+
 		//compare clicked color and goal color
 		if(clickedColor === goal){
 			changeColors(clickedColor);
@@ -100,6 +101,3 @@ for (var i=0; i<squares.length; i++){
 		}
 	});
 }
-
-
-

@@ -7,8 +7,8 @@
 	<link rel="stylesheet" type="text/css" href="circles.css">
 
 	<script type="text/paperscript" canvas="myCanvas">
-	 <!-- Create a circle at the given coordinates -->
-
+	//  INSTRUCTIONS: PRESS ANY KEY 
+	// data for every key and and accompanying sound
 	var keyData = {
 
 
@@ -171,10 +171,10 @@
 	}
 
 	var circles = [];
-
+	// <!-- Create a circle at the given coordinates -->
+	// enable sound with every keypress
 	function onKeyDown(event) {
 		if(keyData[event.key]){
-
 			var maxPoint = new Point(view.size.width, view.size.height);
 			var randomPoint = Point.random();
 			<!-- console.log("randomPoint:" + randomPoint); -->
@@ -186,6 +186,7 @@
 			<!-- console.log(maxPoint); -->
 		}
 	}
+	// Animate circles
 	function onFrame(event){
 		for (var i=0; i<circles.length; i++){
 			circles[i].scale(.9);
