@@ -1,4 +1,4 @@
-var sliderImages = ["fix1.png", "fix2.png","portrait4.png"];
+var sliderImages = ["fix2.png", "portrait4.png", "fix1.png"];
 var current = 0
 
 function welcome(){
